@@ -6,6 +6,7 @@ router.get("/", (req, res) =>{
 })
 
 router.post("/alunos", controllerAluno.Inserir)
-
-router.get("/alunos", controllerAluno.Listar )
+router.get("/alunos", controllerAluno.Listar)
+router.put("/alunos/:id", controllerAluno.Editar)
+router.delete("/alunos/:id", controllerAluno.Excluir)
 export default router;
